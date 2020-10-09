@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { TableOverviewExampleComponent } from './table-overview-example/table-overview-example.component';
 import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CustomerListComponent } from './customer-list/customer-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TableOverviewExampleComponent
+    TableOverviewExampleComponent,
+    CustomerListComponent
   ],
   imports: [
     BrowserModule,
