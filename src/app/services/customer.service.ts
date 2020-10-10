@@ -21,15 +21,15 @@ export class CustomerService {
     this.dataStore = { customers: [] };
     // new up our local internal store
     this._customers = new BehaviorSubject<Customer[]>([]);
-   }
+  }
 
-   // subscribe to our local internal store
-  get cutomers(): Observable<Customer[]> {
+  // subscribe to our local internal store
+  get customers(): Observable<Customer[]> {
     return this._customers.asObservable();
   }
 
   LoadAll() {
-    const customerURL = 'https://angular-material-api.azurewebsites.net/users';
+    const customerURL = 'https://localhost:44336/api/customers';
 
     return this.https.get<Customer[]>(customerURL)
       .subscribe(data => {
@@ -41,6 +41,6 @@ export class CustomerService {
         console.log(error);
         console.error('$== UserService::LoadAll(): Failed to fetch data');
       }
-    );
+      );
   }
 }
