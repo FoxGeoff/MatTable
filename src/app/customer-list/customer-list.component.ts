@@ -12,6 +12,11 @@ import { CustomerService } from '../services/customer.service';
   templateUrl: './customer-list.component.html',
   styleUrls: ['./customer-list.component.css']
 })
+/* This version has issues because
+*  The dataSource is not new-up as a property
+*  "dataSource = new MatTableDataSource<Customer>(this.customers);"
+*/
+
 export class CustomerListComponent implements OnInit, AfterViewInit {
   @Input() customers: Customer[];
 

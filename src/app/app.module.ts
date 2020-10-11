@@ -8,12 +8,14 @@ import { MaterialModule } from './material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CustomerListHttpComponent } from './customer-list-http/customer-list-http.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableOverviewExampleComponent,
-    CustomerListComponent
+    CustomerListComponent,
+    CustomerListHttpComponent
   ],
   imports: [
     BrowserModule,
