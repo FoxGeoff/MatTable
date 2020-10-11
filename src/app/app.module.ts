@@ -9,13 +9,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CustomerListHttpComponent } from './customer-list-http/customer-list-http.component';
+import { TableHttpExampleComponent } from './table-http-example/table-http-example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TableOverviewExampleComponent,
     CustomerListComponent,
-    CustomerListHttpComponent
+    CustomerListHttpComponent,
+    TableHttpExampleComponent
   ],
   imports: [
     BrowserModule,
