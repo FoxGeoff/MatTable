@@ -41,6 +41,6 @@ export class CustomerService {
         console.log(error);
         console.error('$== UserService::LoadAll(): Failed to fetch data');
       }
-      );
+    );
   }
 }
